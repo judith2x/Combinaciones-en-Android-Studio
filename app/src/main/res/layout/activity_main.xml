@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tituloraiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/titulocombinacion"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-black" />
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="217dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/interseccion" />
+
+            <EditText
+                android:id="@+id/objetoselegidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:hint="Ingrese el valor de k (elementos elegidos)"
+                android:inputType="numberDecimal"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/numeroelementos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:hint="Ingrese el valor de n (Total de elementos)"
+                android:inputType="numberDecimal"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/botoncalcular"
+                android:text="CALCULAR COMBINACIÓN">
+            </Button>
+
+            <TextView
+                android:id="@+id/resultadocombinacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonlimpiar"
+                android:text="LIMPIAR">
+            </Button>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
